@@ -152,9 +152,9 @@ fos_elastica:
 
 ```yaml
 filters:
-        search_filter: # the small drop down menu on the side of the search field
+        pre_search_filter: # the small drop down menu on the side of the search field
             enabled: true
-            taxon: category # possible values are taxons codes (category, brand for sylius)
+            taxonomy: category # possible values are taxons codes (category, brand for sylius)
         facet_groups: # possible facet groups, you assign them in a finder object
             search_set:
                 values: [taxons, price, made_of, color]
